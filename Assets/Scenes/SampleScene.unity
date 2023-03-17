@@ -53053,12 +53053,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1157745176}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157745174
@@ -53073,6 +53073,7 @@ GameObject:
   - component: {fileID: 1157745175}
   - component: {fileID: 1157745177}
   - component: {fileID: 1157745178}
+  - component: {fileID: 1157745179}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -53143,9 +53144,10 @@ Transform:
   m_LocalPosition: {x: -7.65, y: 0.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 519420032}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1157745177
 Rigidbody2D:
@@ -53162,12 +53164,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1157745178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53194,6 +53196,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9096637, y: 1.3015034}
   m_EdgeRadius: 0
+--- !u!114 &1157745179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157745174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b319eae3e2a5b4b871119277d75550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1530553614
 GameObject:
   m_ObjectHideFlags: 0
@@ -53238,7 +53252,7 @@ Transform:
   - {fileID: 1769153725}
   - {fileID: 27713118}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769153724
 GameObject:
@@ -53254,7 +53268,6 @@ GameObject:
   - component: {fileID: 1769153728}
   - component: {fileID: 1769153730}
   - component: {fileID: 1769153729}
-  - component: {fileID: 1769153731}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -54237,15 +54250,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1769153731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769153724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9b319eae3e2a5b4b871119277d75550, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
